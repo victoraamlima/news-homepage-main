@@ -1,0 +1,42 @@
+html {
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 144rem;
+    padding: 9rem 16rem;
+    display: grid;
+    grid: "header header"
+          "main aside"
+          "section section";
+    grid-gap: 5.5rem 3rem ;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main {
+    grid-area: main;
+}
+
+.main img {
+    width: 73rem;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.section {
+    grid-area: section;
+}
+
+.section a img {
+    width: 10rem;
+} 
