@@ -2,10 +2,15 @@
     display: flex;
 }
 
+.header nav ul:last-child a {
+padding-right: 0;
+}
+
 .header nav ul li a {
-    font-size: 1.5rem;
-    padding: 10px 20px;
+    font-size: 1.7rem;
+    padding: 10px 35px;
     transition: 0.2s;
+    color: hsl(236, 13%, 42%);
 }
 
 .header nav ul li a:hover {
@@ -71,7 +76,7 @@
     bottom: 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 860px) {
     .header nav label .menu {
         display: block;
     } 
@@ -85,9 +90,9 @@
     }
 
     .header nav {
-        /* position: absolute;
-        top: 8px;
-        right: 20px; */
+        position: absolute;
+        top: 8rem;
+        right: 10px;
         z-index: 1;
     }
 
@@ -95,6 +100,7 @@
         width: 200px;
         background-color: #fff;
         padding: 20px;
+        
     }
 
     .header nav ul a {

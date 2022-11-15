@@ -1,0 +1,24 @@
+@media (max-width: 1315px) {
+    body {
+    grid: "header"
+          "main-image"
+          "main-h"
+          "main-text" 
+          "aside"
+          "top-1"
+          "top-2"
+          "top-3";
+
+    padding: 5rem calc(7.5vw / 1.8);
+    }
+}
+
+@media (max-width: 860px) {
+    .main-image {
+        background-image: url(../assets/images/image-web-3-mobile.jpg);
+        max-width: 68.6rem;
+        max-height: 60rem;
+        height: 100vw;
+        width: 90vw;
+    }
+}

@@ -4,14 +4,15 @@ html {
 }
 
 body {
-    width: 144rem;
-    padding: 9rem 16rem;
+    /* width: 144rem; */
+    padding: 5rem 10rem;
     display: grid;
-    grid: "header header"
-          "main aside"
-          "section section";
-    grid-gap: 5.5rem 3rem ;
-    grid-template-columns: 1fr 1fr;
+    grid: "header header header"
+          "main-image main-image aside"
+          "main-h main-text aside"
+          "top-1 top-2 top-3";
+    grid-gap: 5.5rem 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .header {
@@ -21,22 +22,160 @@ body {
     align-items: center;
 }
 
-.main {
+/* .main {
     grid-area: main;
+    width: 76rem; 
+} */
+
+.main-image {
+    grid-area: main-image;
+    background-image: url(../assets/images/image-web-3-desktop.jpg);
+    background-size: cover;
+    width: 76rem;
+    height: 30rem;
+    justify-self: center;
 }
 
-.main img {
-    width: 73rem;
+/* .main .main-information {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 4rem;
+} */
+
+.main-h {
+    grid-area: main-h;
+    font-size: 5.7rem;
+    line-height: 60px;
+    color: hsl(240, 100%, 5%);
+}
+.main-text {
+    grid-area: main-text;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.main-p {
+    font-size: 1.6rem;
+    line-height: 24px;
+    color: hsl(236, 13%, 42%);
+}
+
+.main-text .main-btn {
+    display: flex;
+    align-items: center;
+}
+
+.main-text .main-btn a {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    background-color: hsl(5, 85%, 63%);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 35px;
+}
+
+.main-text .main-btn a:hover {
+    background-color: hsl(240, 100%, 5%);
 }
 
 .aside {
     grid-area: aside;
+    background-color: hsl(240, 100%, 5%);
+    padding: 25px;
+}
+
+.aside h2 {
+    font-size: 5rem;
+    font-weight: 400;
+    color: hsl(35, 77%, 62%);
+}
+
+.aside a {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 35px 0;
+    gap: 15px;
+    border-bottom: 1px solid hsla(236, 13%, 42%, 0.3);
+    cursor: pointer;
+}
+
+.aside a:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.aside a h3 {
+    font-size: 2.1rem;
+}
+
+.aside a:hover h3 {
+    color: hsl(35, 77%, 62%);
+}
+
+.aside a p {
+    font-size: 1.6rem;
+    color: hsl(233, 8%, 79%);
 }
 
 .section {
     grid-area: section;
+    /* display: flex;
+    justify-content: space-between;
+    gap: 35px; */
 }
 
-.section a img {
+.top {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 25px;
+    width: 365px;
+    padding-right: 35px;
+    cursor: pointer;
+}
+
+.top:hover .top-information h4 {
+    color: hsl(5, 85%, 63%);
+    
+}
+
+.top-1 {
+    grid-area: top-1;
+}
+
+.top-2 {
+    grid-area: top-2;
+}
+
+.top-3 {
+    grid-area: top-3;
+}
+
+.top .top-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top .top-information h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: hsla(236, 13%, 42%, 0.6);
+}
+
+.top .top-information h4 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: hsl(240, 100%, 5%);
+}
+
+.top .top-information p {
+    font-size: 1.5rem;
+    color: hsla(236, 13%, 42%, 0.6);
+    line-height: 24px;
+}
+
+.top img {
     width: 10rem;
-} 
+}
