@@ -1,13 +1,9 @@
 html {
     font-size: 10px;
     font-family: 'Inter', sans-serif;
-    /* width: 80vw; */
 }
 
 body {
-     /* width: 144rem;  */
-    /* width: 100vw;  */
-    /* width: 98vw;  */
     padding: 5rem 5rem;
     margin: auto;
     display: grid;
@@ -26,11 +22,6 @@ body {
     align-items: center;
 }
 
-/* .main {
-    grid-area: main;
-    width: 76rem; 
-} */
-
 .main-image {
     grid-area: main-image;
     background-image: url(../assets/images/image-web-3-desktop.jpg);
@@ -40,25 +31,20 @@ body {
     justify-self: center;
 }
 
-/* .main .main-information {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin-top: 4rem;
-} */
-
 .main-h {
     grid-area: main-h;
     font-size: 5.7rem;
     line-height: 60px;
     color: hsl(240, 100%, 5%);
 }
+
 .main-text {
     grid-area: main-text;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
 }
+
 .main-p {
     font-size: 1.6rem;
     line-height: 24px;
@@ -123,25 +109,15 @@ body {
     color: hsl(233, 8%, 79%);
 }
 
-.section {
-    grid-area: section;
-    /* display: flex;
-    justify-content: space-between;
-    gap: 35px; */
-}
-
 .top {
     display: flex;
-    /* flex-direction: column; */
     gap: 25px;
-    /* width: 365px; */
     padding-right: 35px;
     cursor: pointer;
 }
 
 .top:hover .top-information h4 {
     color: hsl(5, 85%, 63%);
-    
 }
 
 .top-1 {
