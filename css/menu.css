@@ -91,7 +91,7 @@ padding-right: 0;
 
     .header nav {
         position: absolute;
-        top: 8rem;
+        /* top: 8rem; */
         right: 10px;
         z-index: 1;
     }

@@ -1,11 +1,15 @@
 html {
     font-size: 10px;
     font-family: 'Inter', sans-serif;
+    /* width: 80vw; */
 }
 
 body {
-    /* width: 144rem; */
-    padding: 5rem 10rem;
+     /* width: 144rem;  */
+    /* width: 100vw;  */
+    /* width: 98vw;  */
+    padding: 5rem 5rem;
+    margin: auto;
     display: grid;
     grid: "header header header"
           "main-image main-image aside"
@@ -130,7 +134,7 @@ body {
     display: flex;
     /* flex-direction: column; */
     gap: 25px;
-    width: 365px;
+    /* width: 365px; */
     padding-right: 35px;
     cursor: pointer;
 }
