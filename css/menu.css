@@ -85,13 +85,19 @@ padding-right: 0;
         display: none;
     }
 
+    .header nav ul:last-child a {
+        padding: 10px 35px;
+    }
+
+
+
     .header input:checked ~ ul {
         display: block;
     }
 
     .header nav {
         position: absolute;
-        /* top: 8rem; */
+        top: 5rem;
         right: 10px;
         z-index: 1;
     }

@@ -25,12 +25,12 @@
         max-width: 68.6rem;
         max-height: 60rem;
         height: calc(90vw * (600 / 686));
-        /* width: 90vw; */
+        width: 90vw;
         background-repeat: no-repeat;
         background-size: contain;
     }
 
-    .main-text , .main-h , .aside , .top {
+    /* .main-text , .main-h , .aside , .top {
         width: 90vw;
-    }
+    } */
 }
