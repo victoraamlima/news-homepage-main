@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    padding: 5rem 5rem;
+    padding: 5rem 13rem;
     margin: auto;
     display: grid;
     grid: "header header header"
@@ -63,6 +63,7 @@ body {
     color: #fff;
     text-transform: uppercase;
     padding: 15px 35px;
+    transition: 0.3s;
 }
 
 .main-text .main-btn a:hover {
@@ -98,6 +99,7 @@ body {
 
 .aside a h3 {
     font-size: 2.1rem;
+    transition: 0.3s;
 }
 
 .aside a:hover h3 {
@@ -114,10 +116,6 @@ body {
     gap: 25px;
     padding-right: 35px;
     cursor: pointer;
-}
-
-.top:hover .top-information h4 {
-    color: hsl(5, 85%, 63%);
 }
 
 .top-1 {
@@ -148,6 +146,11 @@ body {
     font-size: 1.7rem;
     font-weight: 700;
     color: hsl(240, 100%, 5%);
+    transition: 0.3s;
+}
+
+.top:hover .top-information h4 {
+    color: hsl(5, 85%, 63%);
 }
 
 .top .top-information p {

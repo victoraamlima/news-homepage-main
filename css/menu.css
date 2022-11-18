@@ -11,6 +11,7 @@ padding-right: 0;
     padding: 10px 35px;
     transition: 0.2s;
     color: hsl(236, 13%, 42%);
+    transition: 0.3s;
 }
 
 .header nav ul li a:hover {
